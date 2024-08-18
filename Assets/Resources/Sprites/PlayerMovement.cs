@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -23,5 +24,11 @@ public class PlayerMovement : MonoBehaviour
     {
         // 移動角色
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+
+    private void LateUpdate()
+    {
+        
     }
 }
